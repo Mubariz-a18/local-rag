@@ -9,10 +9,6 @@ from dotenv import load_dotenv
 # Load environment variables from .env_config file
 load_dotenv('.env_config')
 
-# OpenAI API Configuration (for embeddings)
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "your-api-key-here")
-OPENAI_EMBEDDING_MODEL = "text-embedding-ada-002"
-
 # Ollama Configuration (for local LLM generation)
 # Make sure Ollama is running: ollama serve
 OLLAMA_MODEL = "mistral"
